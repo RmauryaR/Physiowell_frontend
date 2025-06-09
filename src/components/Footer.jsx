@@ -96,7 +96,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>@ 2024 PhysioWell. All rights reserved</p>
         <div className="footer-links">
-          <span>Privacy Policy</span> | <span>Terms & Conditions</span>
+          <span>Privacy Policy</span> | <span>Terms & Conditions</span> | <span>Created by: Rahul Maurya</span>
         </div>
         <a href="#top" className="scroll-top">
           ↑
