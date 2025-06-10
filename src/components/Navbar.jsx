@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./Navbar.css";
+import { Collapse } from "bootstrap";
 import logo from "../assets/Phy_logo.png";
 
 const Navbar = () => {
@@ -56,11 +57,13 @@ const Navbar = () => {
       <button
         className="navbar-toggler"
         type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
         aria-label="Toggle navigation"
+        onClick={() => {
+          const collapseElement = collapseRef.current;
+          const bsCollapse =
+            window.bootstrap.Collapse.getOrCreateInstance(collapseElement);
+          bsCollapse.toggle(); 
+        }}
       >
         <span className="navbar-toggler-icon" />
       </button>
