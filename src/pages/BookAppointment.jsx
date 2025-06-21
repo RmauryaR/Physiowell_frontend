@@ -112,6 +112,7 @@ const BookAppointment = () => {
           <input
             name="name"
             className="form-control"
+            placeholder="Login/Register first"
             required
             value={formData.name}
             onChange={handleChange}
@@ -123,6 +124,7 @@ const BookAppointment = () => {
           <label>Email *</label>
           <input
             type="email"
+            placeholder="Login/Register first"
             name="email"
             className="form-control"
             required
